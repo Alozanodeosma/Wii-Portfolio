@@ -13,9 +13,6 @@
 }
 
 @media screen and (min-width: 992px){
-body{
-    cursor: url("/resources/img/Wii-Cursor.png"), auto;
-}
 .flex-container{
     height: 100vh;
     width: 100vw;
@@ -52,11 +49,13 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  clip-path: url(#svg-Wii-icons);
   transition: filter 0.3s ease;
 }
 
 .cards:hover img {
   filter: drop-shadow(0 0 5px rgb(97, 183, 218)) drop-shadow(0 0 2px rgb(97, 183, 218));
+  transform: scale(1.02);
 }
 
 .svg-Wii-icons{
@@ -121,27 +120,21 @@ body{
     text-align: center;
 }
 
-a{
-    aspect-ratio: 1 / 1;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.profile-button{
+    min-width: 10%;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    height: auto;      
+    padding-left: 5%;
 }
-
-.footer-button{
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.footer-button:hover{
-    transform: scale(1.05);
-}
-
-.email-button:hover{
-    transform: scale(1.05);
+.email-button{
+    min-width: 10%;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    height: auto;          
+    padding-right: 5%;
 }
 
 }
