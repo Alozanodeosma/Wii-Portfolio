@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: url("/resources/img/Wii-Cursor.png"), auto;
 }
 
 @font-face {
@@ -14,7 +15,6 @@
 
 @media screen and (min-width: 992px){
 body{
-    cursor: url("/resources/img/Wii-Cursor.png"), auto;
 }
 .flex-container{
     height: 100vh;
@@ -127,6 +127,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+a:hover{
+    cursor: url("/resources/img/Wii-Cursor.png"), auto;
 }
 
 .footer-button{
