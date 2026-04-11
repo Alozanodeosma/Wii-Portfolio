@@ -27,6 +27,7 @@ const startMusic = () => {
   menuMusic.play();
   menuMusic.volume = 0.5;
   menuMusic.loop = true;
+  document.getElementById("disclaimer").style.display = "none";
   document.removeEventListener("click", startMusic);
   document.removeEventListener("keydown", startMusic);
 };
