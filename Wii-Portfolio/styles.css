@@ -54,16 +54,53 @@ body{
     margin-top: 3%;
     animation: changeColor 2s infinite alternate;
 }
-
+svg {
+  width: 100%;
+  height: 100vh;
+    position: absolute;
+  top: 0;
+    left: 0;
+    z-index: 93;
+}
+#ms-background{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;}
+#footer-buttons{
+    background-color: rgb(192, 192, 192);
+    position:fixed; 
+    top: 75%;
+    width: 100%;
+    height: 20%;
+    z-index: 92;
+    border: solid 12px darkgray;
+}
 #black-background{
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: black;
     pointer-events: none;
-    z-index: 99;
+    z-index: 95;
+}
+
+#menu-button{
+    position:fixed; 
+    top: 80%;
+    left: 20%;
+    width: 20%;
+    z-index: 98;
+}
+#play-button{
+    position:fixed; 
+    top: 80%;
+    left: 60%;
+    width: 20%;
+    z-index: 98;
 }
 
 @keyframes changeColor {
@@ -101,14 +138,14 @@ body{
 
 .cards-fullscreen{
     position: fixed;
-    top: 0;
+    top: 2%;
     left: 0;
     width: 100%;
     height: 100%;
     max-width: 100%;
-    z-index: 100;
+    z-index: 96;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .cards img {
@@ -119,9 +156,9 @@ body{
 }
 
 .cards-fullscreen img{
-    width: 95%;
-    height: 95%;
-    }
+    width: 85%;
+    height: 85%;
+}
 
 
 

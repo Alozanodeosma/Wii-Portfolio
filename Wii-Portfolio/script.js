@@ -75,3 +75,14 @@ cards.forEach(card => {
   });
 });
 });
+
+//Fullscreen buttons
+const menuButton = document.getElementById("menu-button");
+const playButton = document.querySelector(".footer-button");
+function appearButtons(){
+    menuButton.hidden = !menuButton.hidden;
+    playButton.hidden = !playButton.hidden;
+}
+cards.forEach(card => {  card.addEventListener("click", () => {
+    setTimeout(appearButtons, 500);
+  });});
